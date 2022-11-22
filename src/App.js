@@ -1,18 +1,27 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Countries from './components/Countries';
-import CountryInfo from './components/CountryInfo';
+import { useDispatch } from 'react-redux';
+import Countries from './pages/Countries';
+import CountryInfo from './pages/CountryInfo';
 import NavBar from './components/NavBar';
 import './App.module.css';
+import Footer from './components/Footer';
+import fetchCountries from './redux/Countries/fetchCountries';
 
-const App = () => (
-  <>
-    <NavBar />
-    <Routes>
-      <Route path="/" element={<Countries />} />
-      <Route path="/" element={<CountryInfo />} />
-    </Routes>
-  </>
-);
+const App = () => {
+  const dispatch = useDispatch();
+  dispatch(fetchCountries());
+  return (
+    <>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Countries />} />
+        <Route path="country" element={<CountryInfo name="Hello" pollution="world" />} />
+      </Routes>
+      <Footer />
+    </>
+
+  );
+};
 
 export default App;
