@@ -1,24 +1,94 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { NavLink, useLocation } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
+import s from './CountryInfo.module.css';
 
-const CountryInfo = ({ name, pollution }) => (
-  <>
-    <p>
-      Name:
-      {' '}
-      {name}
-    </p>
-    <p>
-      Polution:
-      {' '}
-      {pollution}
-    </p>
-  </>
-);
+const CountryInfo = () => {
+  const country = useLocation().state;
+  const {
+    capital, region, population, borders, nativeName, flag,
+  } = country;
+  const countryName = country.name;
+  return (
+    <>
+      <section className={s.infoContainer}>
+        <NavLink to="/">
+          {' '}
+          <FaArrowLeft className={s.vector} />
+        </NavLink>
+        <img src={flag} alt="country flag" height="200" width="300" className={s.flag} />
+        <ul className={s.infoList}>
+          <li>
+            <p>
+              Name:
+            </p>
+            {' '}
+            <span>
+              {countryName || 'No name data'}
 
-CountryInfo.propTypes = {
-  name: PropTypes.string.isRequired,
-  pollution: PropTypes.string.isRequired,
+            </span>
+          </li>
+          <li>
+            <p>
 
+              Capital:
+            </p>
+            {' '}
+            <span>
+              {capital || 'No capital data'}
+
+            </span>
+          </li>
+          <li>
+            <p>
+
+              Region:
+            </p>
+            {' '}
+            <span>
+              {region || 'No region data'}
+
+            </span>
+          </li>
+          <li>
+            <p>
+
+              Population:
+            </p>
+            {' '}
+            <span>
+              {population || 'No population data'}
+
+            </span>
+          </li>
+          <li>
+            <p>
+
+              Borders:
+            </p>
+            {' '}
+            <span>
+              {!borders
+                ? 'No borders'
+                : borders.map((border) => `${border}\n`)}
+
+            </span>
+          </li>
+          <li>
+            <p>
+
+              Native Name:
+            </p>
+            {' '}
+            <span>
+              {nativeName || 'No native name data'}
+
+            </span>
+          </li>
+        </ul>
+      </section>
+    </>
+  );
 };
+
 export default CountryInfo;

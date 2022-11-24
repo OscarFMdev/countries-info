@@ -14,6 +14,11 @@ const countriesSlice = createSlice({
       state.countries = action.payload.map((country) => ({
         id: country.name,
         name: country.name,
+        capital: country.capital,
+        region: country.region,
+        population: country.population,
+        borders: country.borders,
+        nativeName: country.nativeName,
         flag: country.flag,
       }));
     },

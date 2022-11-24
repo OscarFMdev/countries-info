@@ -7,16 +7,31 @@ import NavBar from './components/NavBar';
 import './App.module.css';
 import Footer from './components/Footer';
 import fetchCountries from './redux/Countries/fetchCountries';
+import About from './pages/About';
 
 const App = () => {
   const dispatch = useDispatch();
   dispatch(fetchCountries());
+  const pullData = (data) => {
+    const {
+      id, name, capital, region, population, borders, nativeName, flag,
+    } = data;
+    console.log(id, name, capital, region, population, borders, nativeName, flag);
+  };
   return (
     <>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Countries />} />
-        <Route path="country" element={<CountryInfo name="Hello" pollution="world" />} />
+        <Route
+          path="/"
+          element={(
+            <Countries
+              func={pullData}
+            />
+        )}
+        />
+        <Route path="/country/:countryinfo" element={<CountryInfo />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </>
