@@ -6,6 +6,9 @@ import About from '../pages/About';
 import Countries from '../pages/Countries';
 import store from '../redux/configureStore';
 import '@testing-library/jest-dom';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+import Hero from '../components/Hero';
 
 describe('Testing About page', () => {
   it('Should match the snapshot', () => {
@@ -34,5 +37,50 @@ describe('Testing Countries', () => {
       </StrictMode>,
     );
     expect(countries).toMatchSnapshot();
+  });
+});
+
+describe('Testing NavBar', () => {
+  it('Should match the snapshot', () => {
+    const navBar = render(
+      <StrictMode>
+        <Router>
+          <Provider store={store}>
+            <NavBar />
+          </Provider>
+        </Router>
+      </StrictMode>,
+    );
+    expect(navBar).toMatchSnapshot();
+  });
+});
+
+describe('Testing Footer', () => {
+  it('Should match the snapshot', () => {
+    const footer = render(
+      <StrictMode>
+        <Router>
+          <Provider store={store}>
+            <Footer />
+          </Provider>
+        </Router>
+      </StrictMode>,
+    );
+    expect(footer).toMatchSnapshot();
+  });
+});
+
+describe('Testing Hero', () => {
+  it('Should match the snapshot', () => {
+    const hero = render(
+      <StrictMode>
+        <Router>
+          <Provider store={store}>
+            <Hero />
+          </Provider>
+        </Router>
+      </StrictMode>,
+    );
+    expect(hero).toMatchSnapshot();
   });
 });

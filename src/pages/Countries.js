@@ -1,23 +1,14 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import Hero from '../components/Hero';
 import s from './Countries.module.css';
 
-const Countries = ({ func }) => {
+const Countries = () => {
   const [search, setSearch] = useState('');
   const countries = useSelector((state) => state.countries.countries);
   const status = useSelector((state) => state.countries.status);
 
-  const handleOnClick = (target) => {
-    if (target.tagName === 'IMG') {
-      const country = countries.find(({ flag }) => flag === target.getAttribute('src'));
-      func(country);
-    }
-    const country = countries[target.getAttribute('id')];
-    func(country);
-  };
   const showCountries = () => {
     if (status === 'loading') {
       return <div><p className="message">Loading. Please Wait.</p></div>;
@@ -45,7 +36,7 @@ const Countries = ({ func }) => {
               }}
               state={country}
             >
-              <li id={index} className={s.countryContainer} onClick={(e) => handleOnClick(e.target)} aria-hidden="true">
+              <li id={index} className={s.countryContainer} aria-hidden="true">
                 <img
                   id={index}
                   key={country.name}
@@ -76,7 +67,4 @@ const Countries = ({ func }) => {
   );
 };
 
-Countries.propTypes = {
-  func: PropTypes.func.isRequired,
-};
 export default Countries;
