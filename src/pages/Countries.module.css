@@ -1,6 +1,5 @@
 .countries {
-  background-color: #4369b2;
-  height: 65vh;
+  background-color: #5586e2;
   overflow: hidden;
 }
 
@@ -9,6 +8,7 @@
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   grid-template-rows: repeat(4, auto);
   list-style: none;
+  width: 99vw;
 }
 
 .countryContainer {
@@ -21,4 +21,23 @@
 
 .countryName {
   font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.search {
+  width: 300px;
+  height: 30px;
+  color: black;
+  margin-bottom: 30px;
+  border-style: none;
+  border-radius: 7px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
 }

@@ -1,22 +1,23 @@
-.footer {
-  height: 15vh;
+
+.about {
+  height: 60vh;
+  margin-top: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: #4369b2;
+  text-align: center;
 }
 
-.footerLink:hover {
+.about p a:hover {
   text-decoration: underline;
 }
 
-.footer > div {
+.about > div {
   display: flex;
   height: 20px;
   column-gap: 30px;
 }
 
-.footer div a > * {
+.about div a > * {
   transform: scale(2);
 }

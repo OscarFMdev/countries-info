@@ -2,8 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   background-color: #5586e2;
+}
+
+p {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
