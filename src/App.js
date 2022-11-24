@@ -12,12 +12,6 @@ import About from './pages/About';
 const App = () => {
   const dispatch = useDispatch();
   dispatch(fetchCountries());
-  const pullData = (data) => {
-    const {
-      id, name, capital, region, population, borders, nativeName, flag,
-    } = data;
-    console.log(id, name, capital, region, population, borders, nativeName, flag);
-  };
   return (
     <>
       <NavBar />
@@ -25,9 +19,7 @@ const App = () => {
         <Route
           path="/"
           element={(
-            <Countries
-              func={pullData}
-            />
+            <Countries />
         )}
         />
         <Route path="/country/:countryinfo" element={<CountryInfo />} />

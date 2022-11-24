@@ -10,18 +10,6 @@ const Countries = ({ func }) => {
   const [search, setSearch] = useState('');
   const countries = useSelector((state) => state.countries.countries);
   const status = useSelector((state) => state.countries.status);
-  // const handleOnClick = (target) => {
-  //   if (target.tagName === 'IMG') {
-  //     const country = countries.find(({ flag }) => flag === target.getAttribute('src'));
-  //     console.log(country.name);
-  //     console.log(country.name);
-  //   }
-  //   const country = countries[target.getAttribute('id')];
-  //   console.log(country.name);
-  //   return (
-  //     <CountryInfo />
-  //   );
-  // };
 
   const handleOnClick = (target) => {
     if (target.tagName === 'IMG') {
