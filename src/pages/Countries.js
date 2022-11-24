@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import Hero from '../components/Hero';
 import s from './Countries.module.css';
-// import CountryInfo from './CountryInfo';
 
 const Countries = ({ func }) => {
   const [search, setSearch] = useState('');
