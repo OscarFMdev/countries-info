@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaArrowLeft } from 'react-icons/fa';
+// import { FaArrowLeft } from 'react-icons/fa';
 import s from './NavBar.module.css';
 
 const NavBar = () => (
@@ -9,7 +9,7 @@ const NavBar = () => (
       <p>
         <NavLink to="/">
           {' '}
-          <FaArrowLeft className={s.vector} />
+          &lt;
         </NavLink>
       </p>
       <nav>

@@ -20,3 +20,7 @@ nav {
 .logo {
   filter: invert(1);
 }
+
+.navFlex > p {
+  transform: scale(1.5);
+}
