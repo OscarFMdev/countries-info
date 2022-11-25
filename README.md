@@ -31,9 +31,9 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [countries-info] <a name="about-project"></a>
+# 📖 [Countries Info] <a name="about-project"></a>
 
-**[countries-info]** is a Single Page Application, the user can search for countries and click on any flag to know more about this country. 
+**[Countries Info]** is a Single Page Application, the user can search for countries and click on any flag to know more about this country. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
