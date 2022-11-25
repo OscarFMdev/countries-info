@@ -21,7 +21,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: calc(max(10vw, 900px));
   align-items: center;
   justify-content: space-evenly;
 }
@@ -29,7 +29,7 @@
 .infoList li {
   display: flex;
   justify-content: flex-start;
-  width: 80vw;
+  width: 50vw;
   align-items: flex-start;
   font-size: 30px;
 }

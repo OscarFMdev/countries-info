@@ -75,6 +75,10 @@
 
 - [Live Demo Link](https://oscarfmdev-countries.netlify.app/)
 
+## 🚀 Video Demo <a name="live-demo"></a>
+
+- [Live Video](https://www.loom.com/share/eaebc1690e674db085ed3b2ebeb1d763)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
