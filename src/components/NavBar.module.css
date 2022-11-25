@@ -8,4 +8,25 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 50px;
+  height: 65px;
+}
+
+nav {
+  display: flex;
+  column-gap: 30px;
+}
+
+.logo {
+  filter: invert(1);
+}
+
+.navFlex > p {
+  transform: scale(1.5);
+}
+
+@media only screen and (max-width: 400px) {
+  .navFlex > p {
+    transform: scale(1);
+  }
 }

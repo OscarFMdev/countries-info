@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+// import { FaArrowLeft } from 'react-icons/fa';
 import s from './NavBar.module.css';
 
 const NavBar = () => (
@@ -7,13 +8,21 @@ const NavBar = () => (
     <section className={s.navFlex}>
       <p>
         <NavLink to="/">
-          &lt; Go Back
+          {' '}
+          &lt;
         </NavLink>
       </p>
-      <h1>Countries</h1>
-      <p>Search</p>
+      <nav>
+        <NavLink to="/">
+          Countries
+        </NavLink>
+        <NavLink to="/about">
+          About
+        </NavLink>
+      </nav>
     </section>
   </>
+
 );
 
 export default NavBar;

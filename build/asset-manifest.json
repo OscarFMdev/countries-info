@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c45939b2.css",
+    "main.js": "/static/js/main.9f592bc0.js",
+    "static/media/world-logo.png": "/static/media/world-logo.a024a9dfcc2299ddc5ec.png",
+    "index.html": "/index.html",
+    "main.c45939b2.css.map": "/static/css/main.c45939b2.css.map",
+    "main.9f592bc0.js.map": "/static/js/main.9f592bc0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c45939b2.css",
+    "static/js/main.9f592bc0.js"
+  ]
+}

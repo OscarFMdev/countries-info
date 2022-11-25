@@ -1,0 +1,22 @@
+.footer {
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4369b2;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+.footer > div {
+  display: flex;
+  height: 20px;
+  column-gap: 30px;
+}
+
+.footer div a > * {
+  transform: scale(2);
+}
