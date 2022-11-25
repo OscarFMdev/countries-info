@@ -24,3 +24,9 @@ nav {
 .navFlex > p {
   transform: scale(1.5);
 }
+
+@media only screen and (max-width: 400px) {
+  .navFlex > p {
+    transform: scale(1);
+  }
+}

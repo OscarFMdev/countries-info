@@ -28,17 +28,45 @@
 
 .infoList li {
   display: flex;
-  justify-content: flex-start;
-  width: 50vw;
+  justify-content: space-between;
+  width: 80vw;
+  max-width: 800px;
+  min-width: 400px;
   align-items: flex-start;
   font-size: 30px;
+}
+
+.infoList li:nth-child(even) {
+  background-color: #4369b2;
 }
 
 .infoList li p,
 .infoList li span {
   margin: 0 10px;
+  font-size: 20px;
 }
 
 .infoList li p {
   font-weight: bold;
+}
+
+@media only screen and (max-width: 400px) {
+  .infoList {
+    width: 100vw;
+  }
+
+  .flag {
+    height: 100px;
+    width: auto;
+  }
+
+  .infoList li {
+    width: 100vw;
+    min-width: 115px;
+  }
+
+  .infoList li p,
+  .infoList li span {
+    font-size: 13px;
+  }
 }
