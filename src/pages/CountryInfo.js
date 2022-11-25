@@ -1,6 +1,5 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
-import { FaArrowLeft } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
 import s from './CountryInfo.module.css';
 
 const CountryInfo = () => {
@@ -12,10 +11,6 @@ const CountryInfo = () => {
   return (
     <>
       <section className={s.infoContainer}>
-        <NavLink to="/">
-          {' '}
-          <FaArrowLeft className={s.vector} />
-        </NavLink>
         <img src={flag} alt="country flag" height="200" width="300" className={s.flag} />
         <ul className={s.infoList}>
           <li>

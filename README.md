@@ -166,7 +166,9 @@ If you like this project show your support giving a ⭐.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank [REST Countries API](https://restcountries.com/) for making this project possible.
+I would like to thank: 
+- [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) [for his design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
+- [REST Countries API](https://restcountries.com/) for making this project possible.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
