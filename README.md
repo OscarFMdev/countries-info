@@ -138,7 +138,7 @@ To run tests, run the following command:
 👤 **Author: Oscar Fernández Muñoz**
 
 - GitHub: [@OscarFMdev](https://github.com/OscarFMdev)
-- Twitter: [@twitterhandle](https://twitter.com/oscarfmdev)
+- Twitter: [@oscarfmdev](https://twitter.com/oscarfmdev)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/oscarfmdev)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
